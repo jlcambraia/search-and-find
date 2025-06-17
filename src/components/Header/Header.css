@@ -1,0 +1,18 @@
+.header {
+  padding: 30px 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header__container {
+  padding: 16px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border-radius: 16px;
+  width: 50%;
+}
+
+.header__title {
+  font-size: 24px;
+}
