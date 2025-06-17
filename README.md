@@ -1,3 +1,5 @@
 # Projeto Procure e Ache
 
-## Em breve...
+## Protótipo no ar:
+
+O site está disponível no GitHub Pages: [Clique aqui para acessar](https://jlcambraia.github.io/search-and-find/)
