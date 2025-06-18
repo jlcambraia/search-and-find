@@ -24,7 +24,7 @@ const ConfirmPopup = () => {
 	}, [handleClosePopup]);
 
 	const handleOverlayClick = (evt) => {
-		if (evt.target.classList.contains('popup')) {
+		if (evt.target.classList.contains('confirm-popup')) {
 			handleClosePopup();
 		}
 	};
@@ -35,15 +35,20 @@ const ConfirmPopup = () => {
 	};
 
 	return (
-		<div className='popup' onClick={handleOverlayClick}>
-			<div className='popup__container'>
-				<button className='popup__close-button' onClick={handleClosePopup} />
-				<h2 className='popup__title'>Tem certeza que quer começar de novo?</h2>
-				<div className='popup__button-container'>
-					<button className='popup__button' onClick={handlePlayAgain}>
+		<div className='confirm-popup' onClick={handleOverlayClick}>
+			<div className='confirm-popup__container'>
+				<button
+					className='confirm-popup__close-button'
+					onClick={handleClosePopup}
+				/>
+				<h2 className='confirm-popup__title'>
+					Tem certeza que quer começar de novo?
+				</h2>
+				<div className='confirm-popup__button-container'>
+					<button className='confirm-popup__button' onClick={handlePlayAgain}>
 						Sim
 					</button>
-					<button className='popup__button' onClick={handleClosePopup}>
+					<button className='confirm-popup__button' onClick={handleClosePopup}>
 						Não
 					</button>
 				</div>
