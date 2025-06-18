@@ -1,5 +1,10 @@
 .main__object {
-  border-radius: 10px;
-  background-color: aquamarine;
-  cursor: pointer;
+	border-radius: 10px;
+	background-color: aquamarine;
+	cursor: pointer;
+	transition: background-color 0.1s ease;
+}
+
+.main__object:hover {
+	background-color: rgb(58, 231, 173);
 }
